@@ -1,0 +1,5598 @@
+{
+  "version": "2.0.0",
+  "exportedAt": "2026-04-20T13:14:42.951Z",
+  "manifests": {
+    "aio-metadata:1.35.2": {
+      "id": "aio-metadata",
+      "version": "1.35.2",
+      "logo": "https://aiometadata.fortheweak.cloud/logo.png",
+      "background": "https://aiometadata.fortheweak.cloud/background.png",
+      "name": "AIOMetadata",
+      "description": "A metadata addon for power users. AIOMetadata uses TMDB, TVDB, TVMaze, MyAnimeList, IMDB and Fanart.tv to provide accurate data for movies, series, and anime. You choose the source.",
+      "resources": [
+        "catalog",
+        "meta",
+        "subtitles"
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime.movie",
+        "anime.series",
+        "anime",
+        "Trakt",
+        "collection"
+      ],
+      "idPrefixes": [
+        "tmdb:",
+        "tt",
+        "tvdb:",
+        "mal:",
+        "tvmaze:",
+        "kitsu:",
+        "anidb:",
+        "anilist:",
+        "tvdbc:",
+        "upnext_",
+        "unwatched_",
+        "mdblist_upnext_"
+      ],
+      "stremioAddonsConfig": {
+        "issuer": "https://stremio-addons.net",
+        "signature": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..3_iKJ-pKhR-LclfTPxvyag.uY747PgjymdL0OMdZrE7HTOVG-8nNWC-LrlJ5tCXm2i2FioXv_ismzWV0_XsLl0Me9cW9D3xog6d4tSHDY8Pe27mbIylUb61MS4VVqg_sFZXUVon2le-fRFrtmMnIqCF.oyYRDftPN2sohMpDMbMbYg"
+      },
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false,
+        "newEpisodeNotifications": true
+      },
+      "catalogs": [
+        {
+          "id": "tmdb.trending_movie",
+          "type": "movie",
+          "name": "Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "isRequired": false,
+              "default": "Day"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": true
+        },
+        {
+          "id": "tmdb.trending_series",
+          "type": "series",
+          "name": "Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Day",
+                "Week"
+              ],
+              "isRequired": false,
+              "default": "Day"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": true
+        },
+        {
+          "id": "tmdb.airing_today_series",
+          "type": "series",
+          "name": "Latest Releases",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "AU",
+                "BR",
+                "CA",
+                "DE",
+                "FR",
+                "GB",
+                "IN",
+                "NL",
+                "PL",
+                "PT",
+                "SE",
+                "US"
+              ],
+              "isRequired": false,
+              "default": "AU"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": true
+        },
+        {
+          "id": "tmdb.discover.series.netflix.popular.716kscq8",
+          "type": "series",
+          "name": "Netflix – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.trending.s3i6hh85",
+          "type": "series",
+          "name": "Netflix – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.action-and-adventure.z6lw4ozo",
+          "type": "series",
+          "name": "Netflix – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.comedy.8w0uv7em",
+          "type": "series",
+          "name": "Netflix – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.crime.0z25rual",
+          "type": "series",
+          "name": "Netflix – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.documentary.60xjky95",
+          "type": "series",
+          "name": "Netflix – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.drama.8hou20wy",
+          "type": "series",
+          "name": "Netflix – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.mystery.6k0zjzvk",
+          "type": "series",
+          "name": "Netflix – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.netflix.sci-fi-and-fantasy.9mqag4ja",
+          "type": "series",
+          "name": "Netflix – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.popular.q6j4pirc",
+          "type": "series",
+          "name": "HBO – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.trending.efmrp3sv",
+          "type": "series",
+          "name": "HBO – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.action-and-adventure.mvrjja7k",
+          "type": "series",
+          "name": "HBO – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.comedy.x9lqawfr",
+          "type": "series",
+          "name": "HBO – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.crime.0pm7duwl",
+          "type": "series",
+          "name": "HBO – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.documentary.4wzczg7r",
+          "type": "series",
+          "name": "HBO – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.drama.qip0lp0b",
+          "type": "series",
+          "name": "HBO – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.mystery.8t6jhbc7",
+          "type": "series",
+          "name": "HBO – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hbo.sci-fi-and-fantasy.7m9vc5jf",
+          "type": "series",
+          "name": "HBO – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.popular.zcomjbn4",
+          "type": "series",
+          "name": "Apple TV+ – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.trending.5wxlu37j",
+          "type": "series",
+          "name": "Apple TV+ – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.action-and-adventure.szn2949x",
+          "type": "series",
+          "name": "Apple TV+ – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.comedy.nvkl4i0e",
+          "type": "series",
+          "name": "Apple TV+ – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.crime.qvqr5e5z",
+          "type": "series",
+          "name": "Apple TV+ – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.documentary.f4ihzw87",
+          "type": "series",
+          "name": "Apple TV+ – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.drama.pihnawt9",
+          "type": "series",
+          "name": "Apple TV+ – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.mystery.cel7492f",
+          "type": "series",
+          "name": "Apple TV+ – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.appletv.sci-fi-and-fantasy.aifseuuh",
+          "type": "series",
+          "name": "Apple TV+ – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.popular.ih66461d",
+          "type": "series",
+          "name": "Hulu – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.trending.cucxu2kj",
+          "type": "series",
+          "name": "Hulu – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.action-and-adventure.q0rttrm3",
+          "type": "series",
+          "name": "Hulu – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.comedy.tw2w2vvl",
+          "type": "series",
+          "name": "Hulu – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.crime.pnvxoa3q",
+          "type": "series",
+          "name": "Hulu – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.documentary.3lrp5djq",
+          "type": "series",
+          "name": "Hulu – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.drama.2dtvhil0",
+          "type": "series",
+          "name": "Hulu – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.mystery.hfxx5py8",
+          "type": "series",
+          "name": "Hulu – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.hulu.sci-fi-and-fantasy.5r18nkpf",
+          "type": "series",
+          "name": "Hulu – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.popular.4qmkiivc",
+          "type": "series",
+          "name": "Prime – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.trending.qbuy02nd",
+          "type": "series",
+          "name": "Prime – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.action-and-adventure.mb53am6d",
+          "type": "series",
+          "name": "Prime – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.comedy.px5zrbc9",
+          "type": "series",
+          "name": "Prime – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.crime.ff2nd64k",
+          "type": "series",
+          "name": "Prime – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.documentary.dwihrqhs",
+          "type": "series",
+          "name": "Prime – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.drama.mrbjdkpv",
+          "type": "series",
+          "name": "Prime – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.mystery.snx6v3xw",
+          "type": "series",
+          "name": "Prime – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.prime.sci-fi-and-fantasy.jpjkcadm",
+          "type": "series",
+          "name": "Prime – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.popular.yc5rfyg5",
+          "type": "series",
+          "name": "Disney+ – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.trending.95v3p5ag",
+          "type": "series",
+          "name": "Disney+ – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.action-and-adventure.qpz10pga",
+          "type": "series",
+          "name": "Disney+ – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.comedy.istbtvvm",
+          "type": "series",
+          "name": "Disney+ – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.crime.3oq9agb2",
+          "type": "series",
+          "name": "Disney+ – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.documentary.tmvqtme6",
+          "type": "series",
+          "name": "Disney+ – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.drama.bkovv13k",
+          "type": "series",
+          "name": "Disney+ – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.mystery.wx4y4a5k",
+          "type": "series",
+          "name": "Disney+ – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.disney.sci-fi-and-fantasy.29uius5d",
+          "type": "series",
+          "name": "Disney+ – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.popular.jr120wqo",
+          "type": "series",
+          "name": "Peacock – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.trending.hyig6vyk",
+          "type": "series",
+          "name": "Peacock – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.action-and-adventure.q3k3yfyv",
+          "type": "series",
+          "name": "Peacock – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.comedy.ahz4wib4",
+          "type": "series",
+          "name": "Peacock – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.crime.mo1kht6k",
+          "type": "series",
+          "name": "Peacock – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.documentary.hyqkz8h3",
+          "type": "series",
+          "name": "Peacock – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.drama.vk4n86av",
+          "type": "series",
+          "name": "Peacock – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.mystery.n1i8qu8w",
+          "type": "series",
+          "name": "Peacock – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.peacock.sci-fi-and-fantasy.sg2m7o8t",
+          "type": "series",
+          "name": "Peacock – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.popular.4zymr1zi",
+          "type": "series",
+          "name": "Paramount+ – Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.trending.jy1p5afy",
+          "type": "series",
+          "name": "Paramount+ – Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.action-and-adventure.9f9x1kg1",
+          "type": "series",
+          "name": "Paramount+ – Action & Adventure",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.comedy.hatb5hqn",
+          "type": "series",
+          "name": "Paramount+ – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.crime.ec7z85ds",
+          "type": "series",
+          "name": "Paramount+ – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.documentary.ifbv4vv5",
+          "type": "series",
+          "name": "Paramount+ – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.drama.tl2or34r",
+          "type": "series",
+          "name": "Paramount+ – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.mystery.jzpnk2ip",
+          "type": "series",
+          "name": "Paramount+ – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.paramountplus.sci-fi-and-fantasy.c00skofs",
+          "type": "series",
+          "name": "Paramount+ – Sci-Fi & Fantasy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.top_rated_movie",
+          "type": "movie",
+          "name": "Genres",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "None"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.top_rated_series",
+          "type": "series",
+          "name": "Genres",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "None"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "mal.genres_anime",
+          "type": "anime",
+          "name": "Genres",
+          "pageSize": 25,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adult Cast",
+                "Adventure",
+                "Anthropomorphic",
+                "Avant Garde",
+                "Award Winning",
+                "Boys Love",
+                "CGDCT",
+                "Childcare",
+                "Combat Sports",
+                "Comedy",
+                "Crossdressing",
+                "Delinquents",
+                "Detective",
+                "Drama",
+                "Ecchi",
+                "Educational",
+                "Erotica",
+                "Fantasy",
+                "Gag Humor",
+                "Girls Love",
+                "Gore",
+                "Gourmet",
+                "Harem",
+                "Hentai",
+                "High Stakes Game",
+                "Historical",
+                "Horror",
+                "Idols (Female)",
+                "Idols (Male)",
+                "Isekai",
+                "Iyashikei",
+                "Josei",
+                "Kids",
+                "Love Polygon",
+                "Love Status Quo",
+                "Magical Sex Shift",
+                "Mahou Shoujo",
+                "Martial Arts",
+                "Mecha",
+                "Medical",
+                "Military",
+                "Music",
+                "Mystery",
+                "Mythology",
+                "Organized Crime",
+                "Otaku Culture",
+                "Parody",
+                "Performing Arts",
+                "Pets",
+                "Psychological",
+                "Racing",
+                "Reincarnation",
+                "Reverse Harem",
+                "Romance",
+                "Samurai",
+                "School",
+                "Sci-Fi",
+                "Seinen",
+                "Shoujo",
+                "Shounen",
+                "Showbiz",
+                "Slice of Life",
+                "Space",
+                "Sports",
+                "Strategy Game",
+                "Super Power",
+                "Supernatural",
+                "Survival",
+                "Suspense",
+                "Team Sports",
+                "Time Travel",
+                "Urban Fantasy",
+                "Vampire",
+                "Video Game",
+                "Villainess",
+                "Visual Arts",
+                "Workplace"
+              ],
+              "isRequired": true,
+              "default": "Action"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.top_movie",
+          "type": "movie",
+          "name": "Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "None"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.top_series",
+          "type": "series",
+          "name": "Popular",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "None"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.year_movie",
+          "type": "movie",
+          "name": "By Year",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "2026",
+                "2025",
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001",
+                "2000",
+                "1999",
+                "1998",
+                "1997",
+                "1996",
+                "1995",
+                "1994",
+                "1993",
+                "1992",
+                "1991",
+                "1990",
+                "1989",
+                "1988",
+                "1987",
+                "1986",
+                "1985",
+                "1984",
+                "1983",
+                "1982",
+                "1981",
+                "1980",
+                "1979",
+                "1978",
+                "1977",
+                "1976",
+                "1975",
+                "1974",
+                "1973",
+                "1972",
+                "1971",
+                "1970",
+                "1969",
+                "1968",
+                "1967",
+                "1966",
+                "1965",
+                "1964",
+                "1963",
+                "1962",
+                "1961",
+                "1960",
+                "1959",
+                "1958",
+                "1957",
+                "1956",
+                "1955",
+                "1954",
+                "1953",
+                "1952",
+                "1951",
+                "1950",
+                "1949",
+                "1948",
+                "1947",
+                "1946",
+                "1945",
+                "1944",
+                "1943",
+                "1942",
+                "1941",
+                "1940",
+                "1939",
+                "1938",
+                "1937",
+                "1936",
+                "1935",
+                "1934",
+                "1933",
+                "1932",
+                "1931",
+                "1930",
+                "1929",
+                "1928",
+                "1927",
+                "1926",
+                "1925",
+                "1924",
+                "1923",
+                "1922",
+                "1921",
+                "1920",
+                "1919",
+                "1918",
+                "1917",
+                "1916",
+                "1915",
+                "1914",
+                "1913",
+                "1912",
+                "1911",
+                "1910",
+                "1909",
+                "1908",
+                "1907",
+                "1906",
+                "1905",
+                "1904",
+                "1903",
+                "1902",
+                "1901",
+                "1900"
+              ],
+              "isRequired": true,
+              "default": "2026"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.year_series",
+          "type": "series",
+          "name": "By Year",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "2026",
+                "2025",
+                "2024",
+                "2023",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005",
+                "2004",
+                "2003",
+                "2002",
+                "2001",
+                "2000",
+                "1999",
+                "1998",
+                "1997",
+                "1996",
+                "1995",
+                "1994",
+                "1993",
+                "1992",
+                "1991",
+                "1990",
+                "1989",
+                "1988",
+                "1987",
+                "1986",
+                "1985",
+                "1984",
+                "1983",
+                "1982",
+                "1981",
+                "1980",
+                "1979",
+                "1978",
+                "1977",
+                "1976",
+                "1975",
+                "1974",
+                "1973",
+                "1972",
+                "1971",
+                "1970",
+                "1969",
+                "1968",
+                "1967",
+                "1966",
+                "1965",
+                "1964",
+                "1963",
+                "1962",
+                "1961",
+                "1960",
+                "1959",
+                "1958",
+                "1957",
+                "1956",
+                "1955",
+                "1954",
+                "1953",
+                "1952",
+                "1951",
+                "1950",
+                "1949",
+                "1948",
+                "1947",
+                "1946",
+                "1945",
+                "1944",
+                "1943",
+                "1942",
+                "1941",
+                "1940",
+                "1939",
+                "1938",
+                "1937",
+                "1936",
+                "1935",
+                "1934",
+                "1933",
+                "1932",
+                "1931",
+                "1930",
+                "1929",
+                "1928",
+                "1927",
+                "1926",
+                "1925",
+                "1924",
+                "1923",
+                "1922",
+                "1921",
+                "1920",
+                "1919",
+                "1918",
+                "1917",
+                "1916",
+                "1915",
+                "1914",
+                "1913",
+                "1912",
+                "1911",
+                "1910",
+                "1909",
+                "1908",
+                "1907",
+                "1906",
+                "1905",
+                "1904",
+                "1903",
+                "1902",
+                "1901",
+                "1900"
+              ],
+              "isRequired": true,
+              "default": "2026"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.language",
+          "type": "movie",
+          "name": "TMDB By Language",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "English",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "French",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Kurdish",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Nepali",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Occitan",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Somali",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Uzbek",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "isRequired": true,
+              "default": "English"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.language",
+          "type": "series",
+          "name": "TMDB By Language",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "English",
+                "Afrikaans",
+                "Albanian",
+                "Arabic",
+                "Basque",
+                "Belarusian",
+                "Bengali",
+                "Breton",
+                "Bulgarian",
+                "Catalan",
+                "Chamorro",
+                "Croatian",
+                "Czech",
+                "Danish",
+                "Dutch",
+                "Esperanto",
+                "Estonian",
+                "Finnish",
+                "French",
+                "Gaelic",
+                "Galician",
+                "Georgian",
+                "German",
+                "Greek",
+                "Hebrew",
+                "Hindi",
+                "Hungarian",
+                "Indonesian",
+                "Irish",
+                "Italian",
+                "Japanese",
+                "Kannada",
+                "Kazakh",
+                "Kirghiz",
+                "Korean",
+                "Kurdish",
+                "Latvian",
+                "Lithuanian",
+                "Malay",
+                "Malayalam",
+                "Mandarin",
+                "Marathi",
+                "Nepali",
+                "Norwegian",
+                "Norwegian Bokmål",
+                "Occitan",
+                "Persian",
+                "Polish",
+                "Portuguese",
+                "Punjabi",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Sinhalese",
+                "Slovak",
+                "Slovenian",
+                "Somali",
+                "Spanish",
+                "Swahili",
+                "Swedish",
+                "Tagalog",
+                "Tamil",
+                "Telugu",
+                "Thai",
+                "Turkish",
+                "Ukrainian",
+                "Urdu",
+                "Uzbek",
+                "Vietnamese",
+                "Welsh",
+                "Zulu"
+              ],
+              "isRequired": true,
+              "default": "English"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tvdb.trending",
+          "type": "movie",
+          "name": "TVDB Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Food",
+                "History",
+                "Home and Garden",
+                "Horror",
+                "Indie",
+                "Martial Arts",
+                "Mini-Series",
+                "Musical",
+                "Mystery",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Soap",
+                "Sport",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "Travel",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "Action"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tvdb.trending",
+          "type": "series",
+          "name": "TVDB Trending",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Food",
+                "History",
+                "Home and Garden",
+                "Horror",
+                "Indie",
+                "Martial Arts",
+                "Mini-Series",
+                "Musical",
+                "Mystery",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Soap",
+                "Sport",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "Travel",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "Action"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tvdb.genres",
+          "type": "movie",
+          "name": "TVDB Genres",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Food",
+                "History",
+                "Home and Garden",
+                "Horror",
+                "Indie",
+                "Martial Arts",
+                "Mini-Series",
+                "Musical",
+                "Mystery",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Soap",
+                "Sport",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "Travel",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "Action"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tvdb.genres",
+          "type": "series",
+          "name": "TVDB Genres",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Anime",
+                "Children",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "Food",
+                "History",
+                "Home and Garden",
+                "Horror",
+                "Indie",
+                "Martial Arts",
+                "Mini-Series",
+                "Musical",
+                "Mystery",
+                "Reality",
+                "Romance",
+                "Science Fiction",
+                "Soap",
+                "Sport",
+                "Suspense",
+                "Talk Show",
+                "Thriller",
+                "Travel",
+                "War",
+                "Western"
+              ],
+              "isRequired": true,
+              "default": "Action"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tvdb.collections",
+          "type": "movie",
+          "name": "TVDB Collections",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None"
+              ],
+              "isRequired": true,
+              "default": "None"
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.action.xaji0y6d",
+          "type": "movie",
+          "name": "Genres – Action",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.action.pbhsahxt",
+          "type": "series",
+          "name": "Genres – Action",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.animation.hv3a3zmf",
+          "type": "movie",
+          "name": "Genres – Animation",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.animation.8mdd4v30",
+          "type": "series",
+          "name": "Genres – Animation",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.comedy.t9nt3w5u",
+          "type": "movie",
+          "name": "Genres – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.comedy.zbikcidk",
+          "type": "series",
+          "name": "Genres – Comedy",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.crime.wnnhj7xv",
+          "type": "movie",
+          "name": "Genres – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.crime.g0fn9xuy",
+          "type": "series",
+          "name": "Genres – Crime",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.documentary.41ibljh7",
+          "type": "movie",
+          "name": "Genres – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.documentary.5lxo6qji",
+          "type": "series",
+          "name": "Genres – Documentary",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.drama.ujv6oh9s",
+          "type": "movie",
+          "name": "Genres – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.drama.dbdw2pcn",
+          "type": "series",
+          "name": "Genres – Drama",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.family.9t84azyt",
+          "type": "movie",
+          "name": "Genres – Family",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.family.jxepq85j",
+          "type": "series",
+          "name": "Genres – Family",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.horror.sg65kxvf",
+          "type": "movie",
+          "name": "Genres – Horror",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.mystery.1t2tala7",
+          "type": "movie",
+          "name": "Genres – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.mystery.53lc58dr",
+          "type": "series",
+          "name": "Genres – Mystery",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.romance.c11ertj5",
+          "type": "movie",
+          "name": "Genres – Romance",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.sci-fi.pht0hl9x",
+          "type": "movie",
+          "name": "Genres – Sci-Fi",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.series.genres.sci-fi.pseimvih",
+          "type": "series",
+          "name": "Genres – Sci-Fi",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Kids",
+                "Mystery",
+                "News",
+                "Reality",
+                "Sci-Fi & Fantasy",
+                "Soap",
+                "Talk",
+                "War & Politics",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "tmdb.discover.movie.genres.thriller.cwi64ciy",
+          "type": "movie",
+          "name": "Genres – Thriller",
+          "pageSize": 50,
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "None",
+                "Action",
+                "Adventure",
+                "Animation",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Music",
+                "Mystery",
+                "Romance",
+                "Science Fiction",
+                "TV Movie",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ],
+          "showInHome": false
+        },
+        {
+          "id": "gemini.search",
+          "type": "other",
+          "name": "AI Search",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "search.movie",
+          "type": "movie",
+          "name": ".",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "search.series",
+          "type": "series",
+          "name": ".",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "people_search.people_search_movie",
+          "type": "movie",
+          "name": "People Search",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "people_search.people_search_series",
+          "type": "series",
+          "name": "People Search",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "id": "search.tvdb.collections.search",
+          "type": "collection",
+          "name": "Collections",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": true
+            },
+            {
+              "name": "skip"
+            }
+          ]
+        },
+        {
+          "type": "series",
+          "id": "calendar-videos",
+          "extra": [
+            {
+              "name": "calendarVideosIds",
+              "isRequired": true,
+              "optionsLimit": 100
+            }
+          ],
+          "extraSupported": [
+            "calendarVideosIds"
+          ],
+          "extraRequired": [
+            "calendarVideosIds"
+          ],
+          "name": "Calendar videos"
+        }
+      ],
+      "configVersion": 1776631060604,
+      "language": "en-US",
+      "_debug": {
+        "language": "en-US",
+        "configVersion": 1776631060604,
+        "timestamp": "2026-04-20T13:03:25.375Z"
+      },
+      "_timestamp": 1776690205375
+    },
+    "aiostreamsfortheweebs.midnightignite.me.5b741e0c-d48:2.27.2": {
+      "name": "AIOStreams",
+      "id": "aiostreamsfortheweebs.midnightignite.me.5b741e0c-d48",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.2.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [
+        {
+          "type": "series",
+          "id": "8e7e3b0.formulio-series",
+          "name": "Formulio",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Formula Racing",
+                "Moto Racing"
+              ]
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb",
+            "hpy"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": [
+            "series"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "hpy",
+            "aiostreamserror"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    },
+    "aiostreams.viren070.com.15c14b65-843:2.27.2": {
+      "name": "AIOStreams (Backup)",
+      "id": "aiostreams.viren070.com.15c14b65-843",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.3.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [
+        {
+          "type": "series",
+          "id": "a1ee3b0.formulio-series",
+          "name": "Formulio",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Formula Racing",
+                "Moto Racing"
+              ]
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb",
+            "hpy"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": [
+            "series"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "hpy",
+            "aiostreamserror"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    },
+    "com.stremio.submaker:1.4.80": {
+      "id": "com.stremio.submaker",
+      "version": "1.4.80",
+      "name": "SubMaker | ElfHosted",
+      "contactEmail": "support@submaker.example.com",
+      "description": "Take control of your subtitles! Fetch and translate subtitles from OpenSubtitles, SubScene and SubDL with a free Gemini AI key or other AI providers, without ever leaving Stremio.\n\nSource languages: N/A\nTarget languages: N/A",
+      "logo": "https://submaker.elfhosted.com/logo.png",
+      "background": "https://submaker.elfhosted.com/background.svg",
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "com.linvo.cinemeta:3.0.14": {
+      "id": "com.linvo.cinemeta",
+      "version": "3.0.14",
+      "name": "Cinemeta",
+      "contactEmail": null,
+      "description": "The official addon for movie and series catalogs",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        "addon_catalog"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "id": "last-videos",
+          "type": "series",
+          "name": "Last videos",
+          "extra": [
+            {
+              "name": "lastVideosIds",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 100
+            }
+          ]
+        },
+        {
+          "id": "calendar-videos",
+          "type": "series",
+          "name": "Calendar videos",
+          "extra": [
+            {
+              "name": "calendarVideosIds",
+              "isRequired": true,
+              "options": [],
+              "optionsLimit": 100
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [
+        {
+          "id": "official",
+          "type": "all",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "movie",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "series",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "official",
+          "type": "channel",
+          "name": "Official",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "all",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "movie",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "series",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "channel",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "tv",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "Podcasts",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        },
+        {
+          "id": "community",
+          "type": "other",
+          "name": "Community",
+          "extraRequired": [],
+          "extraSupported": []
+        }
+      ],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "st:wrap::org.stremio.formulio:3.0.0": {
+      "id": "st:wrap::org.stremio.formulio",
+      "version": "3.0.0",
+      "name": "Formula 1 - Replays",
+      "contactEmail": null,
+      "description": "An Addon for Motor Racing Replay Content with Debrid support. (This addon only displays content from external sources. Users are responsible for complying with all applicable laws in their jurisdiction)",
+      "logo": "https://i.postimg.cc/5tTmz4jb/formulio1.png",
+      "background": "https://i.postimg.cc/TPThqWJg/background1.jpg",
+      "types": [
+        "series"
+      ],
+      "resources": [
+        "catalog",
+        {
+          "name": "meta",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "hpy"
+          ]
+        },
+        {
+          "name": "stream",
+          "types": [
+            "series"
+          ],
+          "idPrefixes": [
+            "hpy"
+          ]
+        }
+      ],
+      "catalogs": [
+        {
+          "id": "formulio-series",
+          "type": "series",
+          "name": "Formulio",
+          "extra": [
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Formula Racing",
+                "Moto Racing"
+              ],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "aiostreamsfortheweebs.midnightignite.me.f9d687a5-305:2.27.2": {
+      "name": "AIOStreams",
+      "id": "aiostreamsfortheweebs.midnightignite.me.f9d687a5-305",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.2.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": []
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    },
+    "aiostreams.viren070.com.2de4123b-345:2.27.2": {
+      "name": "AIOStreams (Backup)",
+      "id": "aiostreams.viren070.com.2de4123b-345",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.3.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": []
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    },
+    "aiostreamsfortheweebs.midnightignite.me.1db536bf-056:2.27.2": {
+      "name": "AIOStreams",
+      "id": "aiostreamsfortheweebs.midnightignite.me.1db536bf-056",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.1.9. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": []
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    },
+    "aiostreams.viren070.com.09c739e5-073:2.27.2": {
+      "name": "AIOStreams (Backup)",
+      "id": "aiostreams.viren070.com.09c739e5-073",
+      "version": "2.27.2",
+      "description": "Custom AIOStreams powered by Tamtaro SEL Setup v2.2.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience.",
+      "catalogs": [],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu:",
+            "mal:",
+            "kitsu",
+            "imdb",
+            "mal",
+            "tvdb",
+            "tmdb"
+          ]
+        },
+        {
+          "name": "catalog",
+          "types": []
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "logo": "https://github.com/Tam-Taro/SEL-Filtering-and-Sorting/blob/main/logo.png?raw=true",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      },
+      "addonCatalogs": []
+    }
+  },
+  "accounts": [
+    {
+      "id": "3c5228aa-9414-4265-b812-578addd4931e",
+      "name": "John B.",
+      "email": "jbuschini18@gmail.com",
+      "authKey": "BfIXZQ85d5aKyw0RmyS7vfQPa1yjw7B4A8BkXA5pjXg=",
+      "password": "Opalharper259!",
+      "addons": [
+        {
+          "transportUrl": "https://aiometadata.fortheweak.cloud/stremio/49282c10-905b-400c-8912-ad7ee686c0f3",
+          "transportName": "",
+          "manifestId": "aio-metadata:1.35.2",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690231539
+          }
+        },
+        {
+          "transportUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/5b741e0c-d48b-49bb-91a3-6e98f669a94a/eyJpIjoiZ2ZOclFyM0hzMjgvUDcydnQxWHhFdz09IiwiZSI6Im1Ub0FZMnEwczU0Wnh0RnI2NVB3SG9QeXJQRTFKS0d1THRQR0pwVitQcEk9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreamsfortheweebs.midnightignite.me.5b741e0c-d48:2.27.2",
+          "flags": {
+            "official": false,
+            "protected": true,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690499310,
+            "customDescription": "Custom AIOStreams powered by Tamtaro SEL Setup v2.2.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience."
+          }
+        },
+        {
+          "transportUrl": "https://aiostreams.fortheweak.cloud/stremio/15c14b65-8431-4513-8cc5-a2dc5a19bea3/eyJpIjoiajFtMVpUT2hHQXU5VDJjWkF4STJGQT09IiwiZSI6InRySks4d3AvY3hib09MWDkrVEZQME11RFljVFY0SzlWUlB3UGkzbjJOSHc9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreams.viren070.com.15c14b65-843:2.27.2",
+          "flags": {
+            "enabled": false
+          },
+          "metadata": {
+            "lastUpdated": 1776690569801,
+            "customName": "AIOStreams (Backup)"
+          }
+        },
+        {
+          "transportUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "transportName": "",
+          "manifestId": "com.stremio.submaker:1.4.80",
+          "flags": {
+            "official": false,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690231539
+          }
+        },
+        {
+          "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "transportName": "",
+          "manifestId": "com.linvo.cinemeta:3.0.14",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690231539,
+            "cinemetaConfig": {
+              "removeSearchArtifacts": true,
+              "removeStandardCatalogs": true,
+              "removeMetaResource": true
+            }
+          }
+        },
+        {
+          "transportUrl": "https://stremthru.elfhosted.com/stremio/wrap/eyJ1cHN0cmVhbXMiOlt7InUiOiJodHRwczovL2Zvcm11bGlvLmhheWQudWsvbWFuaWZlc3QuanNvbiJ9XSwic3RvcmVzIjpbeyJjIjoicmQiLCJ0IjoiSjVJWFhYNTJRR0hWU1pVWk9FQVAyWFdHQ1hWN0xJQ09UUUI1NUkzNFBBMzYyWk4yMkoyUSJ9XX0=/manifest.json",
+          "transportName": "",
+          "manifestId": "st:wrap::org.stremio.formulio:3.0.0",
+          "flags": {
+            "official": false,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690231539,
+            "customName": "Formula 1 - Replays"
+          }
+        }
+      ]
+    },
+    {
+      "id": "696917d4-e160-4e8f-a19c-6a63bc73b4d7",
+      "name": "Lauren & Nick",
+      "email": "laurennick2024@gmail.com",
+      "authKey": "qybMOkrJhpnrFK8RCm99BHST2mEMv3u-dpg-JU3R4OI=",
+      "password": "Wakefieldwarriors!",
+      "addons": [
+        {
+          "transportUrl": "https://aiometadata.fortheweak.cloud/stremio/086b1e2f-e769-4536-90a9-42f932b3de66/manifest.json",
+          "transportName": "",
+          "manifestId": "aio-metadata:1.35.2",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690837665
+          }
+        },
+        {
+          "transportUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/f9d687a5-3058-43c9-af09-9af49dc333f6/eyJpIjoiYW91NkpSd3B2SW9DMFphWUdQbFN6QT09IiwiZSI6Im9sYnV1aFFkQkZuZHY4eHZ2QlpRZTdrcEZZM0tLWkNPME4ySnNsOWJSZmM9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreamsfortheweebs.midnightignite.me.f9d687a5-305:2.27.2",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "metadata": {
+            "lastUpdated": 1776690698390,
+            "customDescription": "Custom AIOStreams powered by Tamtaro SEL Setup v2.2.0. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience."
+          }
+        },
+        {
+          "transportUrl": "https://aiostreams.fortheweak.cloud/stremio/2de4123b-3454-43ba-8ed6-2c33b63ad05b/eyJpIjoienFJR2pnU3RwZklHcnFyL1BzRytxZz09IiwiZSI6IlB1cDFYUmtoME1BYzEzRXU4OGgrVUE1OTJMbWhNTVFDWTdDREFRbGtuMjg9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreams.viren070.com.2de4123b-345:2.27.2",
+          "flags": {
+            "enabled": false
+          },
+          "metadata": {
+            "lastUpdated": 1776690724991,
+            "customName": "AIOStreams (Backup)"
+          }
+        },
+        {
+          "transportUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "transportName": "",
+          "manifestId": "com.stremio.submaker:1.4.80",
+          "flags": {
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1775140463319
+          }
+        },
+        {
+          "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "transportName": "",
+          "manifestId": "com.linvo.cinemeta:3.0.14",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1775140463319,
+            "cinemetaConfig": {
+              "removeSearchArtifacts": true,
+              "removeStandardCatalogs": true,
+              "removeMetaResource": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "f53a2e47-5fe8-4333-9592-89084d2a5498",
+      "name": "Ryan & Sarah",
+      "email": "rbuschini@gmail.com",
+      "authKey": "exg6F3uF888V7kGyr-DTnh59Fs52n-07RKSuJIDt6B4=",
+      "password": "wAjvig-mafra3-tacxer",
+      "addons": [
+        {
+          "transportUrl": "https://aiometadata.fortheweak.cloud/stremio/2ffb5c9d-bf21-40f0-98b3-1b78ecc0ee38/manifest.json",
+          "transportName": "",
+          "manifestId": "aio-metadata:1.35.2",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "metadata": {
+            "lastUpdated": 1776629270535
+          }
+        },
+        {
+          "transportUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/1db536bf-0563-41a7-993c-adc6e4ae83ff/eyJpIjoibkRlNldmREkxY0FIcE9hTFdGV0VVdz09IiwiZSI6IlFmNk1tdTBaMkY0RnFwYkFTbEQrMHBFY2trek1FUkl6bWJHWElJRUtaSTA9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreamsfortheweebs.midnightignite.me.1db536bf-056:2.27.2",
+          "flags": {
+            "protected": true,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1776631043125,
+            "customDescription": "Custom AIOStreams powered by Tamtaro SEL Setup v2.1.9. Features advanced filtering with Stream Expression Language and smart sorting with Vidhin's Regex Patterns. Your personal all-in-one setup for the perfect Stremio experience."
+          }
+        },
+        {
+          "transportUrl": "https://aiostreams.fortheweak.cloud/stremio/09c739e5-073a-4b6a-8a74-e763820ca553/eyJpIjoiamh0ckRjRUxLQUt0dGx4UkRQYXpDUT09IiwiZSI6InVkOWV4SHNuUGpudHBOc3ZpcXJqenZtVVFHTmtYb2VKTGcvV2t3M3NCNTQ9IiwidCI6ImEifQ/manifest.json",
+          "transportName": "",
+          "manifestId": "aiostreams.viren070.com.09c739e5-073:2.27.2",
+          "flags": {
+            "enabled": false
+          },
+          "metadata": {
+            "lastUpdated": 1776631043126,
+            "customName": "AIOStreams (Backup)"
+          }
+        },
+        {
+          "transportUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "transportName": "",
+          "manifestId": "com.stremio.submaker:1.4.80",
+          "flags": {
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1775140534198
+          }
+        },
+        {
+          "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "transportName": "",
+          "manifestId": "com.linvo.cinemeta:3.0.14",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "metadata": {
+            "lastUpdated": 1775140534198,
+            "cinemetaConfig": {
+              "removeSearchArtifacts": true,
+              "removeStandardCatalogs": true,
+              "removeMetaResource": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "profiles": [],
+  "identity": {
+    "name": "Boosh"
+  },
+  "addons": {
+    "version": "1.0",
+    "exportedAt": "2026-04-20T13:14:42.951Z",
+    "savedAddons": []
+  },
+  "accountStates": {
+    "3c5228aa-9414-4265-b812-578addd4931e": {
+      "accountId": "3c5228aa-9414-4265-b812-578addd4931e",
+      "installedAddons": [
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadata.fortheweak.cloud/stremio/49282c10-905b-400c-8912-ad7ee686c0f3",
+          "installedAt": "2026-04-20T13:03:26.371Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreamsfortheweebs.midnightignite.me.5b741e0c-d48",
+          "installUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/5b741e0c-d48b-49bb-91a3-6e98f669a94a/eyJpIjoiZ2ZOclFyM0hzMjgvUDcydnQxWHhFdz09IiwiZSI6Im1Ub0FZMnEwczU0Wnh0RnI2NVB3SG9QeXJQRTFKS0d1THRQR0pwVitQcEk9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.737Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": false,
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreams.viren070.com.15c14b65-843",
+          "installUrl": "https://aiostreams.fortheweak.cloud/stremio/15c14b65-8431-4513-8cc5-a2dc5a19bea3/eyJpIjoiajFtMVpUT2hHQXU5VDJjWkF4STJGQT09IiwiZSI6InRySks4d3AvY3hib09MWDkrVEZQME11RFljVFY0SzlWUlB3UGkzbjJOSHc9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.737Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": false
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.stremio.submaker",
+          "installUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "installedAt": "2026-03-03T01:37:45.124Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": false,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.linvo.cinemeta",
+          "installUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.737Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "st:wrap::org.stremio.formulio",
+          "installUrl": "https://stremthru.elfhosted.com/stremio/wrap/eyJ1cHN0cmVhbXMiOlt7InUiOiJodHRwczovL2Zvcm11bGlvLmhheWQudWsvbWFuaWZlc3QuanNvbiJ9XSwic3RvcmVzIjpbeyJjIjoicmQiLCJ0IjoiSjVJWFhYNTJRR0hWU1pVWk9FQVAyWFdHQ1hWN0xJQ09UUUI1NUkzNFBBMzYyWk4yMkoyUSJ9XX0=/manifest.json",
+          "installedAt": "2026-03-17T14:59:47.501Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": false,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadatafortheweak.nhyira.dev/stremio/49282c10-905b-400c-8912-ad7ee686c0f3/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.737Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        }
+      ],
+      "lastSync": "2026-04-20T13:14:28.509Z"
+    },
+    "696917d4-e160-4e8f-a19c-6a63bc73b4d7": {
+      "accountId": "696917d4-e160-4e8f-a19c-6a63bc73b4d7",
+      "installedAddons": [
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadata.fortheweak.cloud/stremio/086b1e2f-e769-4536-90a9-42f932b3de66/manifest.json",
+          "installedAt": "2026-04-02T14:34:18.997Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreamsfortheweebs.midnightignite.me.f9d687a5-305",
+          "installUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/f9d687a5-3058-43c9-af09-9af49dc333f6/eyJpIjoiYW91NkpSd3B2SW9DMFphWUdQbFN6QT09IiwiZSI6Im9sYnV1aFFkQkZuZHY4eHZ2QlpRZTdrcEZZM0tLWkNPME4ySnNsOWJSZmM9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.749Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreams.viren070.com.2de4123b-345",
+          "installUrl": "https://aiostreams.fortheweak.cloud/stremio/2de4123b-3454-43ba-8ed6-2c33b63ad05b/eyJpIjoienFJR2pnU3RwZklHcnFyL1BzRytxZz09IiwiZSI6IlB1cDFYUmtoME1BYzEzRXU4OGgrVUE1OTJMbWhNTVFDWTdDREFRbGtuMjg9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.749Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": false
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.stremio.submaker",
+          "installUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "installedAt": "2026-03-05T14:33:28.477Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.linvo.cinemeta",
+          "installUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.749Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadatafortheweak.nhyira.dev/stremio/086b1e2f-e769-4536-90a9-42f932b3de66/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.749Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        }
+      ],
+      "lastSync": "2026-04-20T13:13:57.962Z"
+    },
+    "f53a2e47-5fe8-4333-9592-89084d2a5498": {
+      "accountId": "f53a2e47-5fe8-4333-9592-89084d2a5498",
+      "installedAddons": [
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadata.fortheweak.cloud/stremio/2ffb5c9d-bf21-40f0-98b3-1b78ecc0ee38/manifest.json",
+          "installedAt": "2026-04-02T14:35:23.099Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true,
+            "protected": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreamsfortheweebs.midnightignite.me.1db536bf-056",
+          "installUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/1db536bf-0563-41a7-993c-adc6e4ae83ff/eyJpIjoibkRlNldmREkxY0FIcE9hTFdGV0VVdz09IiwiZSI6IlFmNk1tdTBaMkY0RnFwYkFTbEQrMHBFY2trek1FUkl6bWJHWElJRUtaSTA9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.842Z",
+          "installedVia": "manual",
+          "flags": {
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aiostreams.viren070.com.09c739e5-073",
+          "installUrl": "https://aiostreams.fortheweak.cloud/stremio/09c739e5-073a-4b6a-8a74-e763820ca553/eyJpIjoiamh0ckRjRUxLQUt0dGx4UkRQYXpDUT09IiwiZSI6InVkOWV4SHNuUGpudHBOc3ZpcXJqenZtVVFHTmtYb2VKTGcvV2t3M3NCNTQ9IiwidCI6ImEifQ/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.842Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": false
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.stremio.submaker",
+          "installUrl": "https://submaker.elfhosted.com/addon/5a669125bba9f738362da3f62a6f2ded/manifest.json",
+          "installedAt": "2026-03-03T01:35:59.658Z",
+          "installedVia": "manual",
+          "flags": {
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "com.linvo.cinemeta",
+          "installUrl": "https://v3-cinemeta.strem.io/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.842Z",
+          "installedVia": "manual",
+          "flags": {
+            "official": true,
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        },
+        {
+          "savedAddonId": null,
+          "addonId": "aio-metadata",
+          "installUrl": "https://aiometadatafortheweak.nhyira.dev/stremio/2ffb5c9d-bf21-40f0-98b3-1b78ecc0ee38/manifest.json",
+          "installedAt": "2026-03-01T17:19:41.842Z",
+          "installedVia": "manual",
+          "flags": {
+            "protected": true,
+            "enabled": true
+          },
+          "syncToLibrary": false
+        }
+      ],
+      "lastSync": "2026-04-20T13:12:27.091Z"
+    }
+  },
+  "failover": {
+    "rules": [
+      {
+        "id": "3c9d1a67-5cc5-41d4-b646-2bec038c87bd",
+        "accountId": "3c5228aa-9414-4265-b812-578addd4931e",
+        "priorityChain": [
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/5b741e0c-d48b-49bb-91a3-6e98f669a94a/eyJpIjoiZ2ZOclFyM0hzMjgvUDcydnQxWHhFdz09IiwiZSI6Im1Ub0FZMnEwczU0Wnh0RnI2NVB3SG9QeXJQRTFKS0d1THRQR0pwVitQcEk9IiwidCI6ImEifQ/manifest.json",
+          "https://aiostreams.fortheweak.cloud/stremio/15c14b65-8431-4513-8cc5-a2dc5a19bea3/eyJpIjoiajFtMVpUT2hHQXU5VDJjWkF4STJGQT09IiwiZSI6InRySks4d3AvY3hib09MWDkrVEZQME11RFljVFY0SzlWUlB3UGkzbjJOSHc9IiwidCI6ImEifQ/manifest.json"
+        ],
+        "isActive": true,
+        "isAutomatic": true,
+        "status": "monitoring",
+        "activeUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/5b741e0c-d48b-49bb-91a3-6e98f669a94a/eyJpIjoiZ2ZOclFyM0hzMjgvUDcydnQxWHhFdz09IiwiZSI6Im1Ub0FZMnEwczU0Wnh0RnI2NVB3SG9QeXJQRTFKS0d1THRQR0pwVitQcEk9IiwidCI6ImEifQ/manifest.json",
+        "lastCheck": "2026-04-18T07:48:13.205Z",
+        "stabilization": {
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/5b741e0c-d48b-49bb-91a3-6e98f669a94a/eyjpijoiz2zoclfym0hzmjgvudcydnqxwhhfdz09iiwizsi6im1ub0fzmnewczu0wnh0rni2nvb3sg9qexjqrtfks0d1thrqr0pwvitqcek9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          },
+          "https://aiostreams.fortheweak.cloud/stremio/15c14b65-8431-4513-8cc5-a2dc5a19bea3/eyjpijoiajftmvput2hhqxu5vdjjwkf4stjgqt09iiwizsi6inrysks4d3avy3hib09mwdkrvezqme11rfljvfy0szlwulb3ugkzbjjoshc9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          }
+        },
+        "name": null,
+        "cooldown_ms": null,
+        "webhookUrl": "",
+        "notifyEnabled": true
+      },
+      {
+        "id": "1a9c493d-8b41-451e-9ca5-f3b7bcf6098f",
+        "accountId": "f53a2e47-5fe8-4333-9592-89084d2a5498",
+        "priorityChain": [
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/1db536bf-0563-41a7-993c-adc6e4ae83ff/eyJpIjoibkRlNldmREkxY0FIcE9hTFdGV0VVdz09IiwiZSI6IlFmNk1tdTBaMkY0RnFwYkFTbEQrMHBFY2trek1FUkl6bWJHWElJRUtaSTA9IiwidCI6ImEifQ/manifest.json",
+          "https://aiostreams.fortheweak.cloud/stremio/09c739e5-073a-4b6a-8a74-e763820ca553/eyJpIjoiamh0ckRjRUxLQUt0dGx4UkRQYXpDUT09IiwiZSI6InVkOWV4SHNuUGpudHBOc3ZpcXJqenZtVVFHTmtYb2VKTGcvV2t3M3NCNTQ9IiwidCI6ImEifQ/manifest.json"
+        ],
+        "isActive": true,
+        "isAutomatic": true,
+        "status": "monitoring",
+        "activeUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/1db536bf-0563-41a7-993c-adc6e4ae83ff/eyJpIjoibkRlNldmREkxY0FIcE9hTFdGV0VVdz09IiwiZSI6IlFmNk1tdTBaMkY0RnFwYkFTbEQrMHBFY2trek1FUkl6bWJHWElJRUtaSTA9IiwidCI6ImEifQ/manifest.json",
+        "lastCheck": "2026-04-19T11:51:07.221Z",
+        "stabilization": {
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/1db536bf-0563-41a7-993c-adc6e4ae83ff/eyjpijoibkrlnldmrekxy0fice9htfdgv0vvdz09iiwizsi6ilfmnk1tdtbamky0rnfwykftbeqrmhbfy2trek1fukl6bwjhweljrutasta9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          },
+          "https://aiostreams.fortheweak.cloud/stremio/09c739e5-073a-4b6a-8a74-e763820ca553/eyjpijoiamh0ckrjruxlqut0dgx4ukrqyxpdut09iiwizsi6invkowv4shnuugpudhboc3zpcxjqenztvvfhtmtyb2vktgcvv2t3m3ncntq9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          }
+        },
+        "name": null,
+        "cooldown_ms": null,
+        "webhookUrl": "",
+        "notifyEnabled": true
+      },
+      {
+        "id": "f60c2bb5-70c7-48e9-971e-b75583e39e85",
+        "accountId": "696917d4-e160-4e8f-a19c-6a63bc73b4d7",
+        "priorityChain": [
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/f9d687a5-3058-43c9-af09-9af49dc333f6/eyJpIjoiYW91NkpSd3B2SW9DMFphWUdQbFN6QT09IiwiZSI6Im9sYnV1aFFkQkZuZHY4eHZ2QlpRZTdrcEZZM0tLWkNPME4ySnNsOWJSZmM9IiwidCI6ImEifQ/manifest.json",
+          "https://aiostreams.fortheweak.cloud/stremio/2de4123b-3454-43ba-8ed6-2c33b63ad05b/eyJpIjoienFJR2pnU3RwZklHcnFyL1BzRytxZz09IiwiZSI6IlB1cDFYUmtoME1BYzEzRXU4OGgrVUE1OTJMbWhNTVFDWTdDREFRbGtuMjg9IiwidCI6ImEifQ/manifest.json"
+        ],
+        "isActive": true,
+        "isAutomatic": true,
+        "status": "monitoring",
+        "activeUrl": "https://aiostreamsfortheweebs.midnightignite.me/stremio/f9d687a5-3058-43c9-af09-9af49dc333f6/eyJpIjoiYW91NkpSd3B2SW9DMFphWUdQbFN6QT09IiwiZSI6Im9sYnV1aFFkQkZuZHY4eHZ2QlpRZTdrcEZZM0tLWkNPME4ySnNsOWJSZmM9IiwidCI6ImEifQ/manifest.json",
+        "lastCheck": "2026-04-19T03:42:49.062Z",
+        "stabilization": {
+          "https://aiostreamsfortheweebs.midnightignite.me/stremio/f9d687a5-3058-43c9-af09-9af49dc333f6/eyjpijoiyw91nkpsd3b2sw9dmfphwudqbfn6qt09iiwizsi6im9synv1affkqkzuzhy4ehz2qlprztdrcezzm0tlwknpme4ysnnsowjszmm9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          },
+          "https://aiostreams.fortheweak.cloud/stremio/2de4123b-3454-43ba-8ed6-2c33b63ad05b/eyjpijoienfjr2pnu3rwzklhcnfyl1bzrytxzz09iiwizsi6ilb1cdfyumtome1byzezrxu4oggrvue1otjmbwhntvfdwtddrefrbgtumjg9iiwidci6imeifq": {
+            "failures": 0,
+            "successes": 2
+          }
+        },
+        "name": null,
+        "cooldown_ms": null,
+        "webhookUrl": "",
+        "notifyEnabled": true
+      }
+    ],
+    "webhook": {
+      "url": "https://discord.com/api/webhooks/1475270376962654238/AJbo8vYkFPOXRLzKT_47sZ4U-1gzB7GCjmTmkBgrX7hUaCNVsrdRPXpHybU_TifToe8v",
+      "enabled": true,
+      "updatedAt": 1771802302812,
+      "isEncrypted": false
+    }
+  },
+  "settings": {
+    "theme": "dark",
+    "privacyMode": true,
+    "libraryViewMode": "grid"
+  }
+}
